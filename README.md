@@ -1,5 +1,5 @@
 # PLMAT API
-**Maintain and Manage Tour users.**
+**Backend services for PLMAT-CES.**
 
 ### Contains 1 micro service:
 - PLMAT API
