@@ -1,0 +1,20 @@
+version: '1'
+services:
+  plmat_db:
+    image: postgres
+    volumes:
+      - ./db/data:/data
+      - ./db/init-db.sh:/docker-entrypoint-initdb.d/init-db.sh
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Abcd1234
+      PGDATA: /data
+  plmat_api:
+    image: strongloop/strong-pm
+    ports:
+      - "8751:8750"
+      - "3051:3050"
+    links:
+      - plmat_db
+    environment:
+      NODE_ENV: production

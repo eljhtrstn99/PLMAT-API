@@ -1,0 +1,7 @@
+{
+  "LocalPostgreSQL": {
+    "name": "db",
+    "connector": "memory",
+    "file": "postgres.db"
+  }
+}

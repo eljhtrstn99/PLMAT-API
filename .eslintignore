@@ -1,0 +1,11 @@
+/client/
+/coverage/
+db
+docs
+Dockerfile
+dist
+node_modules
+README.md
+package.json
+data.txt
+package-lock.json

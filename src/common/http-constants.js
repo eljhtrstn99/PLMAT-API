@@ -1,0 +1,22 @@
+/**
+ * Created by edil on 5/12/17.
+ */
+module.exports = Object.freeze({
+  PORT: 80,
+  SECURE_PORT: 443,
+  ATTR_RELATED: 'related',
+  HEADER_CONTENT_TYPE: 'Content-Type',
+  HEADER_HOST: 'Host',
+  HEADER_LINK: 'Link',
+  HEADER_X_FORWARDED_HOST: 'X-Forwarded-Host',
+  HEADER_X_FORWARDED_PORT: 'X-Forwarded-Port',
+  HEADER_X_FORWARDED_PROTO: 'X-Forwarded-Proto',
+  STATUS_OK: 200,
+  STATUS_CREATED: 201,
+  STATUS_NO_CONTENT: 204,
+  STATUS_BAD_REQUEST: 400,
+  STATUS_UNAUTHORIZED: 401,
+  STATUS_FORBIDDEN: 403,
+  STATUS_RESOURCE_NOT_FOUND: 404,
+  STATUS_UNPROCESSABLE_ENTITY: 422,
+});
