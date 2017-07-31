@@ -15,7 +15,7 @@ services:
       dockerfile: ./Dockerfile.dev
     command: ["./wait-for-it.sh", "plmat_db:5432", "-t", "60", "--","npm run", "start:production"]
     ports:
-      - "3051:3050"
+      - "3050:3050"
     links:
       - plmat_db
     environment:
