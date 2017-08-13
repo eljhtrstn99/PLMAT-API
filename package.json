@@ -75,6 +75,7 @@
     "posttest": "npm run lint && nsp check --output writefile",
     "build": "./node_modules/.bin/babel src -s -D -d dist --ignore node_modules",
     "start:dev": "./node_modules/.bin/nodemon --exec ./node_modules/.bin/babel-node ./src/server/server.js",
+    "start:dev:win" : ".\\node_modules\\.bin\\nodemon --exec .\\node_modules\\.bin\\babel-node .\\src\\server\\server.js",
     "start:production": "npm run build && pm2-docker start ./dist/server/server.js",
     "lint": "./node_modules/.bin/eslint . -c .eslintrc ./src/ --ignore-pattern ./dist/",
     "test": "./node_modules/.bin/babel-node ./node_modules/.bin/cross-env NODE_ENV=test ./node_modules/.bin/nyc ./node_modules/.bin/mocha --recursive tests/",
