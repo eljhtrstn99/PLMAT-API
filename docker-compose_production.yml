@@ -12,8 +12,8 @@ services:
   plmat_api:
     image: strongloop/strong-pm
     ports:
-      - "8751:8750"
-      - "3051:3050"
+      - "8750:8750"
+      - "3050:3050"
     links:
       - plmat_db
     environment:
